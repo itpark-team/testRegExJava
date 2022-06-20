@@ -30,9 +30,9 @@ public class Main {
 
         System.out.println(matcher.matches());*/
 
-        String str = "lksdjfhbkljsdbf sdlkfnsld nbhksdfb hhj@ya.ru shjkdfbsnbsdkjf nkjsdnf  kjsdbf ma@mail.ru dklfnglkdf@yahoo.com slkdffngkld@klsdfnkl.ru sadas@zaasd.asfdagf";
+        String str = "lksdjfhbkljsdbf sdlkfnsld nbhksdfb hhj@ya.ru shjkdfbsnbsdkjf nkjsdnf  kjsdbf ma@mail.ru dklfnglkdf@yahoo.com slkdffngkld@klsdfnkl.ru sadas@zaasd.asfdagf asd821374@Ya.ru1";
 
-        Pattern pattern = Pattern.compile("\\w+@[a-z]+.[a-z]{2,3}\\b", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("\\w+@[a-z]+.\\w{2,3}\\b", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(str);
 
         while (matcher.find()) {
